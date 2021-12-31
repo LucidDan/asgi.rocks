@@ -1,0 +1,16 @@
+{
+  "name": "GraphCMS Schema for asgi.rocks",
+  "schemaPath": "graphcms-schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "Default GraphQL Endpoint": {
+        "url": "https://api-ap-northeast-1.graphcms.com/v2/<add-key-here>/master",
+        "headers": {
+          "user-agent": "JS GraphQL",
+          "authorization": "Bearer <add-bearer-token-here>"
+        },
+        "introspect": true
+      }
+    }
+  }
+}

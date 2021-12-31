@@ -1,0 +1,25 @@
+query allPostSummaries(
+    $orderBy: PostOrderByInput
+    $first: Int
+    $skip: Int
+    $where: PostWhereInput
+) {
+    posts(orderBy: $orderBy, first: $first, skip: $skip, where: $where) {
+        ...PostSummary
+    }
+}
+
+fragment PostSummary on Post {
+    title
+    slug
+    excerpt
+    coverImage {
+        url
+        width
+        height
+        fileName
+        handle
+    }
+    publishedAt
+    tags
+}

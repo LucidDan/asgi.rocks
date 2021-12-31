@@ -1,0 +1,22 @@
+overwrite: true
+schema: "https://api-ap-northeast-1.graphcms.com/v2/<add-key-here>/master"
+documents: "src/**/*.graphql"
+generates:
+  src/generated/graphql.ts:
+    config:
+      fetcher:
+        endpoint: 'https://api-ap-northeast-1.graphcms.com/v2/<add-key-here>/master'
+        # Bug; Headers renders as 'object Object' - https://github.com/dotansimha/graphql-code-generator/issues/6794
+        fetchParams: "{headers: {Authorization: \"Bearer <add-bearer-token-here>\"}}"
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-query":
+          exposeFetcher: true
+          exposeQueryKeys: true
+  ./graphql.schema.json:
+    plugins:
+      - "introspection"
+hooks:
+  afterAllFileWrite:
+    - prettier --write

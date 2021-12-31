@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/graphql": ["src/generated/graphql"],
+      "@/components": ["src/components/index"],
+      "@/components/*": ["src/components/*"],
+      "@/layouts": ["src/layouts/index"],
+      "@/layouts/*": ["src/layouts/*"],
+      "@/utils/*": ["src/utils/*"],
+      "@/utils": ["src/utils/index"],
+      "@/types/*": ["src/types/*"],
+      "@/types": ["src/types/index"]
+    },
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext", "ES2020"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "removeComments": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "inlineSources": true,
+    "sourceRoot": "/",
+    "incremental": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "test/**/*.ts",
+    "test/**/*.tsx",
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": ["node_modules", ".next", "out"]
+}

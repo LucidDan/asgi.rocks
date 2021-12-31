@@ -87,18 +87,6 @@ export function Footer() {
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
                   Solutions
                 </h3>
-                <ul className="mt-4 space-y-4">
-                  {footerNavigation.solutions.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
               </div>
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
@@ -106,35 +94,11 @@ export function Footer() {
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
                   Company
                 </h3>
-                <ul className="mt-4 space-y-4">
-                  {footerNavigation.company.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
               </div>
               <div className="mt-12 md:mt-0">
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
                   Legal
                 </h3>
-                <ul className="mt-4 space-y-4">
-                  {footerNavigation.legal.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
               </div>
             </div>
           </div>

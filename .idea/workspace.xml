@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c764a94d-aa07-44c3-970c-99094a0f42c6" name="Changes" comment="" />
+    <list default="true" id="c764a94d-aa07-44c3-970c-99094a0f42c6" name="Changes" comment="Add all files&#10;&#10;Early state, not ready, but here's the code.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/common/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/common/footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/error.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/error.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +41,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1640918723467</updated>
-      <workItem from="1640918725076" duration="1165000" />
+      <workItem from="1640918725076" duration="1589000" />
     </task>
     <servers />
   </component>
